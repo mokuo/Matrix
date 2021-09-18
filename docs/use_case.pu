@@ -1,0 +1,22 @@
+@startuml use_case
+left to right direction
+
+package "Tennis Court" {
+  usecase "Find reservable tennis courts" as find
+  usecase "Notify newly found reservable tennis courts" as notify
+  usecase "Save newly found reservable tennis courts" as save
+  usecase "Delete reserved tennis courts" as delete
+  usecase "Get all reservable tennis courts" as getAll
+}
+
+actor Advandage as app
+actor User as user
+
+app --> find
+app --> notify
+app --> save
+app --> delete
+
+user --> getAll
+
+@enduml
