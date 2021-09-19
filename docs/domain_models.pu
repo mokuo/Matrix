@@ -1,8 +1,10 @@
 @startuml domain_models
 
 class TennisCourt {
+  String id
   String facilityName
-  String tennisCourtName
+  String name
+  Date date
   Date startTime
   Date endTime
 }
