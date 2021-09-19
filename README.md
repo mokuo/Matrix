@@ -4,6 +4,8 @@
   - [PlantUML](#plantuml)
     - [Requirement](#requirement)
     - [Installation](#installation)
+  - [ts-node](#ts-node)
+  - [Test](#test)
 
 ## PlantUML
 
@@ -23,4 +25,18 @@ brew list graphviz
 brew install graphviz
 # or upgrade
 brew upgrade graphviz
+```
+
+## ts-node
+
+```zsh
+npx ts-node
+```
+
+## Test
+
+```zsh
+npm t
+
+npm t --watch
 ```
