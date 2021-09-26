@@ -11,12 +11,13 @@ class ReservationSystemAdapter implements IReservationSystemAdapter {
     const browser = await chromium.launch()
     const page = await browser.newPage()
 
-    new TopPage(page)
-      .load()
-      .then(nextPage => nextPage.clickOnlyInquiry())
-      .catch(error => { throw error })
+    const topPage = await new TopPage(page).load()
+    const processSelectionPage = await topPage.clickOnlyInquiry()
+    const inquiryMethodSelectionPage = await processSelectionPage.clickInquiryReservation()
+    const categorySelectionPage = await inquiryMethodSelectionPage.clickPurpose()
+    await categorySelectionPage.clickCategory()
 
-    await page.screenshot({ path: "/Users/kida/ghq/github.com.private/mokuo/Advantage/tmp/hoge.png" })
+    await page.screenshot({ path: "/Users/kida/ghq/github.com.private/mokuo/Advantage/tmp/test001.png" })
 
     return [] // HACK
   }
