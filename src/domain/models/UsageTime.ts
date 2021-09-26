@@ -16,11 +16,11 @@ class UsageTime {
     this.startTime = dayjs(startTime)
     this.endTime = dayjs(endTime)
 
-    if (!this.startTime.isSame(this.endTime, 'day')) {
+    if (!this.startTime.isSame(this.endTime, "day")) {
       throw new DifferentDatesError()
     }
 
-    if (this.startTime.isSameOrAfter(this.endTime, 'minute')) {
+    if (this.startTime.isSameOrAfter(this.endTime, "minute")) {
       throw new StartTimeIsAfterEndTimeError()
     }
   }

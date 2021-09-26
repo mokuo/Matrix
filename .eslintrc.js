@@ -6,6 +6,12 @@ module.exports = {
     project: ['./tsconfig.eslint.json'],
     ecmaVersion: 2020,
   },
+  // fix: `Unable to resolve path to module '@src/**' eslint(import/no-unresolved)`
+  settings: {
+    'import/resolver': {
+      typescript: { project: './' }
+    }
+  },
   plugins: [
     '@typescript-eslint',
     'jest',
@@ -30,15 +36,9 @@ module.exports = {
       "error",
       { ignores: ["modules"] },
     ],
-    "node/no-missing-import": [
-      "error",
-      {
-        "allowModules": [],
-        "resolvePaths": ["./"],
-        "tryExtensions": [".ts", ".js"]
-      }
-    ],
+    "node/no-missing-import": ["off"], // fix: `"@src/***" is not found. eslint(node/no-missing-import)`
     "import/order": [2, { "alphabetize": { "order": "asc" }}],
-    "quotes": [2, "double"]
+    "quotes": [2, "double"],
+    "class-methods-use-this": ["off"] // NOTE: this がなくても class を使いたい時がある
   },
 };

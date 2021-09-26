@@ -1,5 +1,5 @@
-import TennisCourt from "@src/domain/models/TennisCourt"
 import { chromium, Page } from "playwright"
+import TennisCourt from "@src/domain/models/TennisCourt"
 
 class ItabashiService {
   // TODO: ページオブジェクトに切り出す
