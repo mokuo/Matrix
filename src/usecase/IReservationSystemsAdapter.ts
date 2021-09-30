@@ -1,7 +1,7 @@
 import TennisCourt from "@src/domain/models/TennisCourt";
 
-interface IReservationSystemAdapter {
+interface IReservationSystemsAdapter {
   getTennisCourts: () => Promise<TennisCourt[]>
 }
 
-export default IReservationSystemAdapter
+export default IReservationSystemsAdapter

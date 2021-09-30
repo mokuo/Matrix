@@ -1,4 +1,4 @@
-import ReservationSystemAdapter from "../ReservationSystemAdapter";
+import ReservationSystemAdapter from "../ReservationSystemsAdapter";
 
 // fix: `thrown: "Exceeded timeout of 5000 ms for a test.`
 jest.setTimeout(300000)
