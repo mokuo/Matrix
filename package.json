@@ -1,5 +1,5 @@
 {
-  "name": "advantage",
+  "name": "matrix",
   "version": "1.0.0",
   "engines": {
     "node": ">=14.0.0"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/mokuo/Advantage.git"
+    "url": "ssh://git@github.com/mokuo/Matrix.git"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +23,6 @@
   "devDependencies": {
     "@types/app-root-path": "^1.2.4",
     "@types/jest": "^27.0.1",
-    "@types/jsdom": "^16.2.13",
     "@types/node": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -42,8 +41,6 @@
   },
   "dependencies": {
     "app-root-path": "^3.0.0",
-    "dayjs": "^1.10.7",
-    "jsdom": "^17.0.0",
-    "playwright": "^1.14.1"
+    "dayjs": "^1.10.7"
   }
 }

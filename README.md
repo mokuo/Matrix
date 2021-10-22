@@ -1,10 +1,17 @@
-# Advantage
+# Matrix
 
-- [Advantage](#advantage)
+- [Matrix](#matrix)
+  - [Setup](#setup)
   - [PlantUML](#plantuml)
     - [Requirement](#requirement)
     - [Installation](#installation)
   - [Scripts](#scripts)
+
+## Setup
+
+```
+npm install
+```
 
 ## PlantUML
 
